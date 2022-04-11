@@ -35,12 +35,13 @@ export default function Login() {
           value={form.password}
           required
         />
-
-        <button type={"submit"}>Enviar</button>
+        <div>
+          <button type={"submit"}>Enviar</button>
+          <Link to="/signup">
+            <button>Cadrastrar</button>
+          </Link>
+        </div>
       </form>
-      <Link to="/signup">
-        <button>Cadrastrar</button>
-      </Link>
     </>
   );
 }
