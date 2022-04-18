@@ -1,7 +1,11 @@
 import React from 'react'
+import Header from "../../Components/Header/Header";
 
 export default function ProductsPage() {
   return (
-    <div>ProductsPage</div>
-  )
+    <div>
+      <Header />
+      <div>ProductsPage</div>
+    </div>
+  );
 }
