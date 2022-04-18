@@ -1,10 +1,10 @@
 import React from 'react'
-import { Container, InfoContent, Rights } from './styled'
+import { Container, InfoContent, Rights, SecondContainer } from './styled'
 
 export default function Footer() {
   return (
     <Container>
-
+      <SecondContainer>
       {/* <InfoContent>
         <section>
           <article>A SEMPRE FINA</article>
@@ -23,6 +23,8 @@ export default function Footer() {
       <Rights>
         <p>© 2022 Sempre Fina. Todos os direitos reservados.</p>
       </Rights>
+
+      </SecondContainer>
     </Container>
   )
 }
