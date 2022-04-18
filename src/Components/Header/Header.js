@@ -6,7 +6,6 @@ import {
   ContainerHeaderTop,
   ContainerHeaderTopTitles,
   ContainerInput,
-  Teste,
 } from "./styled";
 const config = { textDecoration: "none" };
 export default function Header() {
@@ -22,7 +21,7 @@ export default function Header() {
             <p>store</p>
           </Link>
           <Link to="/login" style={config}>
-            <Teste>account</Teste>
+            <p>account</p>
           </Link>
           <div>
             <Link to="/cart" style={config}>
