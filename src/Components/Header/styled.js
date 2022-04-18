@@ -41,12 +41,6 @@ export const ContainerHeaderTopTitles = styled.div`
     margin: 0 4px;
   }
 `;
-export const Teste=styled.p`
-
-  
-    text-decoration: none;
-  
-`
 
 export const ContainerInput = styled.input`
   width: 250px;
