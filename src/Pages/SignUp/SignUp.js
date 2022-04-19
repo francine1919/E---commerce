@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HeaderLogin from "../../Components/Header/HeaderLogin";
 import useForm from "../../Hooks/useForm";
 export default function SignUp() {
   const { form, onChangeForm, clearForm } = useForm({
@@ -14,6 +15,7 @@ export default function SignUp() {
   };
   return (
     <div>
+      <HeaderLogin/>
       <h1>Cadastre-se</h1>
       <form onSubmit={onSingUp}>
         <p>Usuário</p>
