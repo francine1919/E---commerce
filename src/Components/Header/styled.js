@@ -3,6 +3,14 @@ import styled from "styled-components";
 export const ContainerHeader = styled.div`
   display: flex;
   flex-direction: column;
+  height: 64px;
+  position: sticky;
+  top: 0;
+`;
+export const ContainerHeaderLogin = styled.div`
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
 `;
 export const ContainerHeaderTop = styled.div`
   display: flex;
@@ -18,8 +26,8 @@ export const ContainerHeaderTop = styled.div`
 `;
 export const LogoHeaderTop = styled.img`
   border-radius: 20%;
-  width: 8%;
-  margin: 0 20px;
+  width: 64%;
+  margin: 14px;
 `;
 export const ContainerHeaderTopTitles = styled.div`
   display: flex;
@@ -34,12 +42,15 @@ export const ContainerHeaderTopTitles = styled.div`
   p {
     margin: 0 4px;
   }
+  img {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 export const ContainerInput = styled.input`
   width: 300px;
   box-sizing: border-box;
-  /* border: 2px solid #ccc; */
   border-radius: 4px;
   border-top: none;
   border-left: none;
@@ -55,14 +66,17 @@ export const ContainerInput = styled.input`
   transition: width 0.4s ease-in-out;
 
   :focus {
-   width: 200%;
+    width: 200%;
   }
 `;
 export const ContainerHeaderBottom = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   background-color: #f08080;
   height: 48px;
+  
+
   p {
     color: white;
   }

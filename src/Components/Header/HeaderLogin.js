@@ -1,30 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import {
-  ContainerHeader,
-  ContainerHeaderBottom,
-  ContainerHeaderTop,
-  ContainerHeaderTopTitles,
-  ContainerInput,
-  LogoHeaderTop,
-} from "./styled";
+import { ContainerHeaderLogin, LogoHeaderTop } from "./styled";
 import sempreFina from "../../Assets/images/sempre-fina.jpg";
-const config = { textDecoration: "none" };
+import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function HeaderLogin() {
   return (
-    <ContainerHeader>
-      <ContainerHeaderTop>
-        <Link to="/" style={config}>
+    <div>
+      <ContainerHeaderLogin>
+        <Link to="/">
           <LogoHeaderTop
             src={sempreFina}
             alt="Logo sempre fina, font is blue and background is light pink."
           />
         </Link>
-        <form>
+      </ContainerHeaderLogin>
+    </div>
+  );
+}
+
+{
+  /* <form>
           <ContainerInput placeholder="Pesquisar" type={"text"} />
-        </form>
-        <ContainerHeaderTopTitles>
+        </form> */
+}
+{
+  /* <ContainerHeaderTopTitles>
           <Link to="/products" style={config}>
             <p>store</p>
           </Link>
@@ -36,18 +36,11 @@ export default function Header() {
               <p>basket</p>
               <img
                 alt="Shopping basket"
+                width="20px"
+                height="20px"
                 src="https://img.icons8.com/doodle/48/000000/shopping-basket-2--v1.png"
               />
             </div>
           </Link>
-        </ContainerHeaderTopTitles>
-      </ContainerHeaderTop>
-
-      <ContainerHeaderBottom>
-        <p>Men's clothing</p>
-        <p>Jewelry</p>
-        <p>Women's clothing</p>
-      </ContainerHeaderBottom>
-    </ContainerHeader>
-  );
+        </ContainerHeaderTopTitles> */
 }
